@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to right, #E5DBE8, #DFF9FB);
 }
 
 @layer utilities {
@@ -31,3 +26,42 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.nav {
+  background-color: transparent;
+  width: 100%;
+}
+
+/* .side-menu {
+  width: 200px;
+  background-color: transparent;
+  padding-top: 10%;
+  padding-left: 1% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.side-menu a {
+  align-items: center;
+  .icon {
+      padding-right: 10px;
+  }
+
+  .FontAwesomeIcon {
+    color: #343a40;
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+  }
+}
+
+.side-menu a:hover::after {
+  color: #01AFF5;
+
+} */
