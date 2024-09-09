@@ -30,11 +30,12 @@ body {
 
 .nav {
   background-color: transparent;
-  width: 100%;
+  /* width: 100%; */
 }
 
-/* .side-menu {
-  width: 200px;
+
+.side-menu {
+  width: 200px; /* This matches the Tailwind width */
   background-color: transparent;
   padding-top: 10%;
   padding-left: 1% !important;
@@ -48,20 +49,176 @@ body {
 }
 
 .side-menu a {
+  display: flex;
   align-items: center;
-  .icon {
-      padding-right: 10px;
-  }
+  color: #343a40;
+  text-decoration: none;
+  padding: 10px 20px;
+}
 
-  .FontAwesomeIcon {
-    color: #343a40;
-    text-decoration: none;
-    padding: 10px 20px;
-    align-items: center;
-  }
+.side-menu a .icon {
+  padding-right: 10px; /* Adds space between icon and text */
+}
+
+.side-menu a:hover {
+ 
 }
 
 .side-menu a:hover::after {
-  color: #01AFF5;
+  content: '';
+  /* display: block; */
+  /* width: 100%; */
+  background-color: #01AFF5;
+}
 
+.timeline-border {
+ 
+}
+
+/* Special effects */
+
+.border-glow {
+  box-shadow: 0px 0px 10px 5px white;
+}
+
+.text-glow {
+  text-shadow: 1px 1px 13px #ffffff;
+}
+
+.pulse {
+  animation: pulse 50s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+ /* card animations */
+
+ .card-container {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0.7;
+}
+
+.card-container.expanded {
+  max-height: 500px; /* Adjust according to your content size */
+  opacity: 1;
+}
+
+.card-content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-container.expanded .card-content {
+  opacity: 1;
+}
+
+/* Carousel  */
+
+.carousel-container {
+  display: inline-block;
+  position: relative;
+  width: 200px; /* Adjust according to your layout */
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel-text {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  font-size: 16px;
+}
+
+.carousel-item {
+  min-width: 100%; /* Each item takes full width */
+}
+
+/* .text-with-dots {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dots {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: rgb(164, 163, 163);
+  border-radius: 50%;
+  margin: 0 2px;
+  animation: jump 1s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Cloud that appears on hover */
+.dots:hover::after {
+  content: "Additional info or tooltip goes here."; /* Customize this text */
+  position: absolute;
+  top: -40px; /* Adjust for cloud position above dots */
+  left: 0;
+  width: 150px; /* Adjust width of the cloud */
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Make the cloud visible on hover */
+.dots:hover::after {
+  opacity: 1;
+  transform: scale(1);
 } */
+
+
+/* .Timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+} */
+
+
+
+/* Ensure that the body and html have full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
