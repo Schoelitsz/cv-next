@@ -30,12 +30,12 @@ body {
 
 .nav {
   background-color: transparent;
-  /* width: 100%; */
+  
 }
 
 
 .side-menu {
-  width: 200px; /* This matches the Tailwind width */
+  width: 200px; 
   background-color: transparent;
   padding-top: 10%;
   padding-left: 1% !important;
@@ -57,7 +57,7 @@ body {
 }
 
 .side-menu a .icon {
-  padding-right: 10px; /* Adds space between icon and text */
+  padding-right: 10px; 
 }
 
 .side-menu a:hover {
@@ -66,8 +66,6 @@ body {
 
 .side-menu a:hover::after {
   content: '';
-  /* display: block; */
-  /* width: 100%; */
   background-color: #01AFF5;
 }
 
@@ -110,7 +108,7 @@ body {
 }
 
 .card-container.expanded {
-  max-height: 500px; /* Adjust according to your content size */
+  max-height: 500px; 
   opacity: 1;
 }
 
@@ -127,7 +125,7 @@ body {
 .carousel-container {
   display: inline-block;
   position: relative;
-  width: 200px; /* Adjust according to your layout */
+  width: 200px; 
   height: 30px;
   overflow: hidden;
   text-align: center;
@@ -140,7 +138,7 @@ body {
 }
 
 .carousel-item {
-  min-width: 100%; /* Each item takes full width */
+  min-width: 100%; 
 }
 
 /* .text-with-dots {
@@ -204,7 +202,7 @@ body {
 .dots:hover::after {
   opacity: 1;
   transform: scale(1);
-} */
+}
 
 
 /* .Timeline {
