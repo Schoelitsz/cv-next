@@ -25,7 +25,7 @@ export default async function Home() {
   }));
 
   return (
-    <div>
+    <div className="">
       <nav className="nav">
         <div className="pr-4 flex flex-wrap justify-between pt-4">
             <ul className="flex ml-auto space-x-4">
@@ -39,13 +39,17 @@ export default async function Home() {
             </ul>
         </div>
       </nav>
-      <div>
-        <Intro />
+      <div className="flex">
+      <div className="w-64">
         <SideMenu />
+      </div>
+      <div className="flex-1">
+        <Intro />
         <Timeline />
         <SkillCards />
         <ProjectCards projectCards={projectCards} />
       </div>
     </div>
+  </div>
   );
 }
