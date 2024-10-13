@@ -1,11 +1,9 @@
 import React from 'react';
-import { sql } from "@vercel/postgres";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faFile, faHeart, faComputerMouse, faPhone, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
 const SideMenu: React.FC = () => {
 
-  // const { rows } = await sql`Se`
   return (
     <div className="side-menu w-64 h-screen text-white flex flex-col pt-10 pl-1 fixed top-0 left-0 bottom-0">
       <div className="flex flex-col space-y-16">
