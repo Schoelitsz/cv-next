@@ -6,6 +6,7 @@ import SideMenu from "./components/SideMenu";
 import Timeline from "./components/Timeline";
 import SkillCards from "./components/Skills";
 import ProjectCards from "./components/ProjectCards";
+import About from "./components/about";
 
 export default async function Home() {
   const { rows } = await sql`SELECT * from cv_navbar`;
@@ -48,6 +49,7 @@ export default async function Home() {
         <Timeline />
         <SkillCards />
         <ProjectCards projectCards={projectCards} />
+        <About />
       </div>
     </div>
   </div>
