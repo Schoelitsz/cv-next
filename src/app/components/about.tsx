@@ -25,9 +25,7 @@ export default async function About() {
                                 <h1>Date:</h1> {new Date(row.date).toLocaleDateString()}
                             </div>
                             <div className="text-gray-400 mt-2">
-                                {row.notes.split('\n').map((note: string, index: number) => (
-                                    <p key={index} className="mb-1">• {note}</p>
-                                ))}
+                                <p>{row.notes}</p>
                             </div>
                         </div>
                     ))}
