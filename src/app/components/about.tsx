@@ -15,7 +15,7 @@ export default async function About() {
             <div className="max-w-2xl w-full text-center px-2">
                 <h1 className="text-4xl font-bold text-white mb-6 text-stroke-6 text-glow">About This App</h1>
                 <h3 className="text-lg text-gray-400 mb-10">
-                    This application was built using Next.JS and is almost completely dynamically loaded from a database hosted on Vercel. To help manage the database and the content, I will also be creating a CSM in a C# application. This app works as an online, dynamic and easy-to-update CV and a hub to show what I'm working on. In that spirit I'll also be adding blog features in the future. Below you can read the release notes as I continue the develop the app.
+                    This application was built using Next.JS and is almost completely dynamically loaded from a database hosted on Vercel. To help manage the database and the content, I will also be creating a CSM in a C# application. This app works as an online, dynamic and easy-to-update CV and a hub to show what I am working on. In that spirit I will also be adding blog features in the future. Below you can read the release notes as I continue the develop the app.
                 </h3>
                 <h1 className="text-4xl pt-6 font-semibold text-white mb-4 text-glow">Release Notes</h1>
                 <div className="border-glow bg-white-800 rounded-lg p-4">
